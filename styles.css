@@ -66,3 +66,25 @@ nav ul li a.active {
 .hero-text h1 {
     font-size: 2em;
 }
+.hero-donate {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: #FFD700;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-donate h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.hero-donate button {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
