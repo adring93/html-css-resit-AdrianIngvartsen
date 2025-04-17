@@ -36,7 +36,65 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s, color 0.3s; /* Smooth effect */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hide the checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* Style the burger icon */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Ensure nav is visible on desktop */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        background-color: #616969;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        z-index: 100;
+    }
+
+    .menu-toggle:checked ~ nav ul {
+        display: flex;
+    }
+
+    .hero {
+        z-index: 1;
+    }
 }
 
 
@@ -628,7 +686,6 @@ footer {
         gap: 10px;
         text-align: center;
     }
-
     .hero-text h1 {
         font-size: 1.5em;
         text-align: center;
@@ -694,4 +751,55 @@ html, body {
 
 * {
     box-sizing: border-box; /* Ensure padding/margins don’t cause overflow */
+}
+/* Hide the checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* Style the burger icon */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Default nav styles for desktop */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #4A5E5E;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .menu-toggle:checked ~ nav ul {
+        display: flex;
+    }
 }
