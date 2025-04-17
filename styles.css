@@ -65,11 +65,10 @@ nav ul li a.active {
     height: 400px;
     object-fit: cover;
 }
-
 .hero-text {
     position: absolute;
     top: 50%;
-    right: 5%;
+    left: 20px; /* Move to the left/middle */
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent box */
     color: white;
@@ -78,6 +77,7 @@ nav ul li a.active {
     max-width: 400px;
     text-align: center;
 }
+
 .hero-text h1 {
     font-size: 1.5em;
     margin: 0;
@@ -87,7 +87,6 @@ nav ul li a.active {
     margin: 10px 0 0;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .hero-text {
         position: static;
@@ -104,7 +103,7 @@ nav ul li a.active {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
-    background-color: #FFF9C4; /* Lime green as in the design */
+    background-color: #FFF9C4;
     padding: 20px;
     text-align: center;
     width: 300px;
@@ -128,6 +127,20 @@ nav ul li a.active {
         position: static;
         transform: none;
         margin: 10px auto;
+        width: 100%;
+        max-width: 300px;
+        .hero {
+            flex-direction: column;
+            height: auto;
+        }
+        
+        .hero-text,
+        .hero-donate {
+            width: 100%;
+            margin: 10px 0;
+            text-align: center;
+        }
+        
     }
 }
 .mission {
