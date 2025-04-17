@@ -19,12 +19,16 @@ header {
     align-items: center;
 }
 .logo {
-    background-color: #00000077; /* Black background */
-    padding: 5px; /* Add some padding for spacing */
+    background-color: #00000077;
+    padding: 5px;
 }
 
 .logo img {
     height: 60px;
+    .logo img {
+        height: 60px;
+        display: block;
+    }
 }
 nav ul {
     list-style: none;
