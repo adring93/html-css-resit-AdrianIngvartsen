@@ -481,10 +481,12 @@ footer {
     margin-bottom: 10px;
 }
 
-.tree-stats button {
+.tree-stats a {
     background-color: #FFD700;
     padding: 10px 20px;
     border: none;
+    color: #333;
+    text-decoration: none;
 }
 .hero img[src="assets/team.jpg"] {
     height: 350px;
