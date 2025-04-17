@@ -130,7 +130,19 @@ nav ul li a.active {
 .hero-text {
     position: absolute;
     top: 50%;
-    right: 20px; /* ⬅️ Changed from left to right */
+    right: 20px; 
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    text-align: center;
+}
+.hero-text-home {
+    position: absolute;
+    top: 50%;
+    left: 20px; 
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
